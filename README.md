@@ -1,6 +1,6 @@
 # MineSweep
 Qt扫雷游戏
-## clone至 https://github.com/yeyinglong/MineSweep
+## clone from https://github.com/yeyinglong/MineSweep
 
 [CSDN Qt扫雷游戏 博客](http://blog.csdn.net/u013407923/article/details/50472635)
 
