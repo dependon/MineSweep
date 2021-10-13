@@ -5,6 +5,7 @@
 #include <QGraphicsView>
 #include <QMouseEvent>
 #include <QPainter>
+#include <QDesktopServices>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -142,8 +143,7 @@ void MainWindow::on_sectime()
     update();
 }
 
-
 void MainWindow::on_actionAbout_triggered()
 {
-
+    QDesktopServices::openUrl(QUrl("https://github.com/dependon/MineSweep"));
 }
