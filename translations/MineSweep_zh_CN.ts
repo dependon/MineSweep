@@ -6,47 +6,52 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>MainWindow</source>
-        <translation type="unfinished"></translation>
+        <translation>主窗口</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="28"/>
         <source>game</source>
-        <translation type="unfinished"></translation>
+        <translation>游戏</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="38"/>
         <source>help</source>
-        <translation type="unfinished"></translation>
+        <translation>帮助</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="48"/>
         <source>restart</source>
-        <translation type="unfinished"></translation>
+        <translation>重新开始</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="53"/>
         <source>exit</source>
-        <translation type="unfinished"></translation>
+        <translation>退出</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="58"/>
         <source>about</source>
-        <translation type="unfinished"></translation>
+        <translation>关于</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="66"/>
         <source>beginner</source>
-        <translation type="unfinished"></translation>
+        <translation>初等难度</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="77"/>
         <source>intermediate</source>
-        <translation type="unfinished"></translation>
+        <translation>中等难度</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="85"/>
         <source>advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>高级难度</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="14"/>
+        <source>MineSweeper</source>
+        <translation>扫雷</translation>
     </message>
 </context>
 </TS>

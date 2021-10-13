@@ -19,7 +19,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 private:
     CMineMap mineMap;
-    int offsetx,offsety;
+    int offsetx, offsety;
     QTimer *rumtime;
 public:
     explicit MainWindow(QWidget *parent = 0);
@@ -27,7 +27,7 @@ public:
     void paintEvent(QPaintEvent *);
 protected:
     void mousePressEvent(QMouseEvent *event);
-   // void mouseMoveEvent(QMouseEvent *event);
+    // void mouseMoveEvent(QMouseEvent *event);
 
 private slots:
 
@@ -41,6 +41,8 @@ private slots:
     void on_actionAdvanced_triggered();
 
     void on_sectime();
+    void on_actionAbout_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
