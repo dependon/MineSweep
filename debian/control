@@ -1,12 +1,12 @@
-Source: minesweep
+Source: com.github.minesweep
 Section: utils
 Priority: optional
 Maintainer: liuminghang  <liuminghang0821@gmail.com>
 Build-Depends: debhelper (>= 9),pkg-config, dpkg-dev, qt5-qmake, qtbase5-dev,qttools5-dev-tools
 Standards-Version: 0.0-3
-Homepage: minesweep
+Homepage: com.github.minesweep
 
-Package: minesweep
+Package: com.github.minesweep
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: minesweep.
