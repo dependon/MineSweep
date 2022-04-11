@@ -46,7 +46,7 @@ translations.path = /opt/apps/com.github.minesweep/files/bin/translations
 translations.files = $$PWD/translations/*.qm
 
 icon.path =/opt/apps/com.github.minesweep/entries/icons
-icon.files=$$PWD/install/MineSweep.png
+icon.files=$$PWD/install/MineSweep.svg
 
 info.path=/opt/apps/com.github.minesweep/
 info.files= $$PWD/info/*
