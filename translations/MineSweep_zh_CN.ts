@@ -2,6 +2,60 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN">
 <context>
+    <name>CustomDialog</name>
+    <message>
+        <location filename="../customdialog.ui" line="14"/>
+        <source>Dialog</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../customdialog.ui" line="24"/>
+        <source>Row</source>
+        <translation>行</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.ui" line="31"/>
+        <source>Column</source>
+        <translation>列</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.ui" line="38"/>
+        <source>Mine</source>
+        <translation>雷数</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.ui" line="75"/>
+        <location filename="../customdialog.ui" line="82"/>
+        <source>0-50</source>
+        <translation>0-50</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.ui" line="89"/>
+        <source>1-2500</source>
+        <translation>1-2500</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.ui" line="102"/>
+        <source>Ok</source>
+        <translation>确定</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.ui" line="109"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.cpp" line="22"/>
+        <source>Error!</source>
+        <translation>错误！</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.cpp" line="22"/>
+        <source>Error data</source>
+        <translation>错误数据</translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
@@ -10,48 +64,73 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="28"/>
-        <source>game</source>
+        <source>&amp;game</source>
         <translation>游戏</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="38"/>
-        <source>help</source>
+        <location filename="../mainwindow.ui" line="39"/>
+        <source>he&amp;lp</source>
         <translation>帮助</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="48"/>
+        <location filename="../mainwindow.ui" line="49"/>
         <source>restart</source>
         <translation>重新开始</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="53"/>
+        <location filename="../mainwindow.ui" line="54"/>
         <source>exit</source>
         <translation>退出</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="58"/>
+        <location filename="../mainwindow.ui" line="59"/>
         <source>about</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="66"/>
+        <location filename="../mainwindow.ui" line="67"/>
         <source>beginner</source>
-        <translation>初等难度</translation>
+        <translation>简单难度</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="77"/>
+        <location filename="../mainwindow.ui" line="78"/>
         <source>intermediate</source>
         <translation>中等难度</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="85"/>
+        <location filename="../mainwindow.ui" line="86"/>
         <source>advanced</source>
-        <translation>高级难度</translation>
+        <translation>困难</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="14"/>
+        <location filename="../mainwindow.ui" line="91"/>
+        <source>custom</source>
+        <translation>自定义</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="18"/>
         <source>MineSweeper</source>
         <translation>扫雷</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="113"/>
+        <source>You Win!</source>
+        <translation>你赢了！</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="113"/>
+        <source>You Win! Time is %1 S</source>
+        <translation>你赢了！时间是 %1 秒</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="116"/>
+        <source>You failed!</source>
+        <translation>你输了！</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="116"/>
+        <source>You failed! Time is %1 S</source>
+        <translation>你输了！时间是%1 秒</translation>
     </message>
 </context>
 </TS>

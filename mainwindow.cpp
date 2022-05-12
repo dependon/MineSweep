@@ -6,6 +6,9 @@
 #include <QMouseEvent>
 #include <QPainter>
 #include <QDesktopServices>
+#include <QMessageBox>
+
+#include "customdialog.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -106,6 +109,12 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
         if (mineMap.winf == 0 || mineMap.winf == 2) {
             if (rumtime->isActive())
                 rumtime->stop();//停止计时
+            if(mineMap.winf == 2){
+                QMessageBox::information(this, tr("You Win!"),tr("You Win! Time is %1 S").arg(mineMap.timer));
+            }
+            if(mineMap.winf == 0){
+                QMessageBox::information(this, tr("You failed!"),tr("You failed! Time is %1 S").arg(mineMap.timer));
+            }
             if (px >  mineMap.mx * 10 - 15 && px < mineMap.mx * 10 + 15 && py > 4 && py < 34) {
                 mineMap.Restart();//点击表情图标重新开始
                 update();
@@ -146,4 +155,17 @@ void MainWindow::on_sectime()
 void MainWindow::on_actionAbout_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://github.com/dependon/MineSweep"));
+}
+
+void MainWindow::on_actioncustom_triggered()
+{
+    CustomDialog dialog;
+    connect(&dialog,&CustomDialog::sigSetMineSweepValue,this,&MainWindow::customPlay,Qt::DirectConnection);
+    dialog.exec();
+}
+
+void MainWindow::customPlay(int row,int colum,int mine)
+{
+    mineMap.Create(row, colum, mine);
+    setFixedSize(mineMap.mx * 20 + offsetx * 2, mineMap.my * 20 + offsety + 66);
 }
