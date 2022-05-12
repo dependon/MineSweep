@@ -14,12 +14,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    MineMap.cpp
+    MineMap.cpp \
+    customdialog.cpp
 
 HEADERS  += mainwindow.h \
-    MineMap.h
+    MineMap.h \
+    customdialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    customdialog.ui
 
 RESOURCES += \
     hellores.qrc

@@ -43,6 +43,10 @@ private slots:
     void on_sectime();
     void on_actionAbout_triggered();
 
+    void on_actioncustom_triggered();
+
+    void customPlay(int row,int colum,int mine);
+
 private:
     Ui::MainWindow *ui;
 };
