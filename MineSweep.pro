@@ -38,17 +38,20 @@ CONFIG(release, debug|release) {
         system(lrelease $$tsfile -qm $$qmfile) | error("Failed to lrelease")
     }
 }
-
+#com.github.minesweep
 APPSHAREDIR = /usr/share/$$TARGET
-unix:!android: target.path = /usr/bin
+unix:!android: target.path = /opt/apps/com.github.minesweep/files/bin/
 
-desktop.path = /usr/share/applications/
-desktop.files = $$PWD/install/MineSweep.desktop
+desktop.path = /opt/apps/com.github.minesweep/entries/applications
+desktop.files = $$PWD/install/com.github.minesweep.desktop
 
-translations.path = $$APPSHAREDIR/translations
+translations.path = /opt/apps/com.github.minesweep/files/bin/translations
 translations.files = $$PWD/translations/*.qm
 
-icon.path =/usr/share/icons
-icon.files=$$PWD/install/MineSweep.png
+icon.path =/opt/apps/com.github.minesweep/entries/icons
+icon.files=$$PWD/install/MineSweep.svg
 
-!isEmpty(target.path): INSTALLS += target icon desktop translations
+info.path=/opt/apps/com.github.minesweep/
+info.files= $$PWD/info/*
+
+!isEmpty(target.path): INSTALLS += target icon desktop translations info

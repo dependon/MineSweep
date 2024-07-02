@@ -7,7 +7,7 @@
 #include <QTranslator>
 #include <QDesktopWidget>
 
-#define TRANSALTIONPATH "/usr/share/MineSweep/translations"
+#define TRANSALTIONPATH "/opt/apps/com.github.minesweep/files/bin/translations"
 
 int main(int argc, char *argv[])
 {

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Categories=Application;
+Comment=MineSweep
+Comment[zh_CN]=经典扫雷
+Exec=/opt/apps/com.github.minesweep/files/bin/MineSweep
+GenericName=MineSweep
+GenericName[zh_CN]=经典扫雷
+Icon=MineSweep
+Name=MineSweep
+Name[zh_CN]=经典扫雷
+StartupNotify=false
+Terminal=false
+Type=Application
+Version=1.0.0.0
