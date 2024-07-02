@@ -25,6 +25,8 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     void paintEvent(QPaintEvent *);
+
+    void changeFixeSize();
 protected:
     void mousePressEvent(QMouseEvent *event);
     // void mouseMoveEvent(QMouseEvent *event);

@@ -24,28 +24,37 @@
         <translation>雷数</translation>
     </message>
     <message>
-        <location filename="../customdialog.ui" line="75"/>
-        <location filename="../customdialog.ui" line="82"/>
+        <location filename="../customdialog.ui" line="101"/>
+        <location filename="../customdialog.ui" line="108"/>
+        <source>9-50</source>
+        <translation type="unfinished">9-50</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.ui" line="115"/>
+        <source>2-2500</source>
+        <translation type="unfinished">2-2500</translation>
+    </message>
+    <message>
         <source>0-50</source>
-        <translation>0-50</translation>
+        <translation type="vanished">0-50</translation>
     </message>
     <message>
-        <location filename="../customdialog.ui" line="89"/>
         <source>1-2500</source>
-        <translation>1-2500</translation>
+        <translation type="vanished">1-2500</translation>
     </message>
     <message>
-        <location filename="../customdialog.ui" line="102"/>
+        <location filename="../customdialog.ui" line="128"/>
         <source>Ok</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="../customdialog.ui" line="109"/>
+        <location filename="../customdialog.ui" line="135"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
         <location filename="../customdialog.cpp" line="22"/>
+        <location filename="../customdialog.cpp" line="27"/>
         <source>Error!</source>
         <translation>错误！</translation>
     </message>
@@ -53,6 +62,11 @@
         <location filename="../customdialog.cpp" line="22"/>
         <source>Error data</source>
         <translation>错误数据</translation>
+    </message>
+    <message>
+        <location filename="../customdialog.cpp" line="27"/>
+        <source>Mine too more!</source>
+        <translation>雷太多!</translation>
     </message>
 </context>
 <context>
@@ -113,22 +127,22 @@
         <translation>扫雷</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="113"/>
+        <location filename="../mainwindow.cpp" line="123"/>
         <source>You Win!</source>
         <translation>你赢了！</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="113"/>
+        <location filename="../mainwindow.cpp" line="123"/>
         <source>You Win! Time is %1 S</source>
         <translation>你赢了！时间是 %1 秒</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="116"/>
+        <location filename="../mainwindow.cpp" line="126"/>
         <source>You failed!</source>
         <translation>你输了！</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="116"/>
+        <location filename="../mainwindow.cpp" line="126"/>
         <source>You failed! Time is %1 S</source>
         <translation>你输了！时间是%1 秒</translation>
     </message>

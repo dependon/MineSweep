@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
     mineMap.Create();
     offsetx = 5;
     offsety = 30;
-    setFixedSize(mineMap.mx * 20 + offsetx * 2, mineMap.my * 20 + offsety + 46);
+    changeFixeSize();
     rumtime = new QTimer(this);
     connect(rumtime, SIGNAL(timeout()), this, SLOT(on_sectime()));
     ui->menuHelp->hide();
@@ -90,6 +90,11 @@ void MainWindow::paintEvent(QPaintEvent *)
     painter.drawPixmap(mineMap.mx * 20 - 26 + offsetx, 5 + offsety, bmpnub, rt % 10 * 20, 0, 20, 28);
 }
 
+void MainWindow::changeFixeSize()
+{
+    setFixedSize(mineMap.mx * 20 + offsetx * 2 , mineMap.my * 20 + offsety + 66 + 5);
+}
+
 //鼠标按下事件
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
@@ -109,15 +114,16 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
         if (mineMap.winf == 0 || mineMap.winf == 2) {
             if (rumtime->isActive())
                 rumtime->stop();//停止计时
+            if (px >  mineMap.mx * 10 - 15 && px < mineMap.mx * 10 + 15 && py > 4 && py < 34) {
+                mineMap.Restart();//点击表情图标重新开始
+                update();
+                return;
+            }
             if(mineMap.winf == 2){
                 QMessageBox::information(this, tr("You Win!"),tr("You Win! Time is %1 S").arg(mineMap.timer));
             }
             if(mineMap.winf == 0){
                 QMessageBox::information(this, tr("You failed!"),tr("You failed! Time is %1 S").arg(mineMap.timer));
-            }
-            if (px >  mineMap.mx * 10 - 15 && px < mineMap.mx * 10 + 15 && py > 4 && py < 34) {
-                mineMap.Restart();//点击表情图标重新开始
-                update();
             }
         }
     } else if (event->button() == Qt::RightButton) {
@@ -131,19 +137,19 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 void MainWindow::on_actionEasy_triggered()
 {
     mineMap.Create(10, 8, 15);
-    setFixedSize(mineMap.mx * 20 + offsetx * 2, mineMap.my * 20 + offsety + 66);
+   changeFixeSize();
 }
 //中级
 void MainWindow::on_actionIntermediate_triggered()
 {
     mineMap.Create(20, 15, 50);
-    setFixedSize(mineMap.mx * 20 + offsetx * 2, mineMap.my * 20 + offsety + 66);
+   changeFixeSize();
 }
 //高级
 void MainWindow::on_actionAdvanced_triggered()
 {
     mineMap.Create(30, 20, 100);
-    setFixedSize(mineMap.mx * 20 + offsetx * 2, mineMap.my * 20 + offsety + 66);
+   changeFixeSize();
 }
 //计时器每秒加一
 void MainWindow::on_sectime()
@@ -167,5 +173,5 @@ void MainWindow::on_actioncustom_triggered()
 void MainWindow::customPlay(int row,int colum,int mine)
 {
     mineMap.Create(row, colum, mine);
-    setFixedSize(mineMap.mx * 20 + offsetx * 2, mineMap.my * 20 + offsety + 66);
+   changeFixeSize();
 }
