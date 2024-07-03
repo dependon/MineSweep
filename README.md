@@ -2,6 +2,7 @@
 
 dowload path : 
 [https://software.opensuse.org//download.html?project=home%3Aliuminghang&package=com.github.minesweep](https://software.opensuse.org//download.html?project=home%3Aliuminghang&package=com.github.minesweep)
+
 Qt MineSweep Game
 ## clone from https://github.com/yeyinglong/MineSweep
 
